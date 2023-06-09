@@ -1,6 +1,8 @@
 {
   "WEB_DEVELOPER": "WEB_DEVELOPER",
+  "bottom_text": "bottom_text",
   "description_text": "description_text",
+  "orange_text": "orange_text",
   "react_angular": "react_angular",
   "Язык": "Язык"
 }

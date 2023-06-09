@@ -7,7 +7,9 @@ module.exports = {
     'plugin:react/recommended',
     'standard-with-typescript',
     'eslint:recommended',
-    'plugin:react/jsx-runtime'
+    'plugin:react/jsx-runtime',
+    "plugin:i18next/recommended"
+    
   ],
   overrides: [
     {
@@ -15,7 +17,7 @@ module.exports = {
       extends: [
         'plugin:@typescript-eslint/recommended',
         'plugin:@typescript-eslint/recommended-requiring-type-checking',
-        "plugin:@typescript-eslint/strict"
+        "plugin:@typescript-eslint/strict",
       ]
     }
   ],
@@ -28,7 +30,8 @@ module.exports = {
   parser: '@typescript-eslint/parser',
   plugins: [
     'react',
-    '@typescript-eslint'
+    '@typescript-eslint',
+    "i18next"
   ],
   rules: {
     "import/no-unresolved": "off",
@@ -51,7 +54,8 @@ module.exports = {
     "@typescript-eslint/no-unnecessary-condition": "off",
     '@typescript-eslint/naming-convention': 'off',
     '@typescript-eslint/no-floating-promises': 'off',
-    '@typescript-eslint/no-floating-promises':'off'
+    '@typescript-eslint/no-floating-promises':'off',
+    "i18next/no-literal-string": ['error', {markupOnly:true}]
       },
   settings: {
     react: {
@@ -60,6 +64,10 @@ module.exports = {
   },
   globals: {
     __IS_DEV__: true,
-  }
+  },
+  
+    "plugins": ["i18next"],
+
+  
  
 }

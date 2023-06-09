@@ -2,34 +2,39 @@
     padding-top: 70px;
     display: flex;
     justify-content: center;
+
     .left_side{
-    max-width: 715px;
-    padding-top: 22px;
+        max-width: 715px;
+        padding-top: 22px;
 
-       .head_text{
-        font-family: 'Roboto';
-        font-style: normal;
-        font-weight: 700;
-        font-size: 72px;
-        line-height: 82px;
-        padding-bottom: 30px;
-        /* identical to box height, or 115% */
+        .head_text{
+            font-family: Roboto, sans-serif;
+            font-style: normal;
+            font-weight: 700;
+            font-size: 72px;
+            line-height: 82px;
+            padding-bottom: 30px;
 
-        letter-spacing: 2px;
-        .orange_text{
-        color: #FF8A56;
-        }
+            /* identical to box height, or 115% */
+
+            letter-spacing: 2px;
+
+            .orange_text{
+                color: #FF8A56;
+            }
       
 
-       }
-       .bottom_text{
-        max-width: 547px;
-       }
+        }
+
+        .bottom_text{
+            max-width: 547px;
+        }
 
     }
+
     .right_side_foto{
         max-width:500px;
-height:595px;
-background-color: antiquewhite;
+        height:595px;
+        background-color: antiquewhite;
     }
 }

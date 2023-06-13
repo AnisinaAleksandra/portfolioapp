@@ -1,17 +1,20 @@
 import { type RouteProps } from 'react-router-dom'
 import { MainPage } from 'pages/MainPage'
 import { AboutPage } from 'pages/AboutPage'
+import { NotFoundPage } from 'pages/NotFoundPage'
 
 export enum AppRoutes {
   MAIN = 'main',
   ABOUT = 'about',
+  NOT_FOUND = 'not_found'
   // PROJECTS = 'projects',
   // CONTACTS = "contacts",
 }
 
 export const RoutePath: Record<AppRoutes, string> = {
   [AppRoutes.MAIN]: '/',
-  [AppRoutes.ABOUT]: '/about'
+  [AppRoutes.ABOUT]: '/about',
+  [AppRoutes.NOT_FOUND]: '*'
   // [AppRoutes.PROJECTS]: '/projects',
   // [AppRoutes.CONTACTS]: '/contacts',
 }
@@ -24,7 +27,8 @@ export const routeConfig: Record<AppRoutes, RouteProps> = {
   [AppRoutes.ABOUT]: {
     path: RoutePath.about,
     element: <AboutPage />
-  }
+  },
+
   // [AppRoutes.PROJECTS]: {
   //     path: RoutePath.projects,
   //     element: <ProjectsPage />
@@ -33,5 +37,8 @@ export const routeConfig: Record<AppRoutes, RouteProps> = {
   //     path: RoutePath.contacts,
   //     element: <ContactsPage />
   // },
-
+  [AppRoutes.NOT_FOUND]: {
+    path: RoutePath.not_found,
+    element: <NotFoundPage className={''} />
+  }
 }

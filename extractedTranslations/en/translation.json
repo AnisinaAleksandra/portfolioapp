@@ -1,12 +1,16 @@
 {
   "Not_found_page": "Page not found",
   "WEB_DEVELOPER": "WEB_DEVELOPER",
+  "about": "About",
   "bottom_text": "bottom_text",
+  "contacts": "Contacts",
   "description_text": "description_text",
+  "language": "Язык",
+  "main": "Main",
   "orange_text": "orange_text",
+  "projects": "Projects",
   "react_angular": "react_angular",
   "throw error": "throw error",
   "Обновить страницу": "Обновить страницу",
-  "Произошла непредвиденная ошибка": "Произошла непредвиденная ошибка",
-  "Язык": "Язык"
+  "Произошла непредвиденная ошибка": "Произошла непредвиденная ошибка"
 }

@@ -1,7 +1,12 @@
-import React, { type FC, useMemo, useState } from 'react'
-import { LOCAL_STORAGE_THEME_KEY, Theme, ThemeContext } from '../lib/ThemeContext'
+import { type FC, useMemo, useState } from 'react'
+import {
+  LOCAL_STORAGE_THEME_KEY,
+  Theme, ThemeContext
+} from '../lib/ThemeContext'
 
-const defaultTheme = localStorage.getItem(LOCAL_STORAGE_THEME_KEY) as Theme || Theme.LIGHT
+// eslint-disable-next-line @typescript-eslint/no-unnecessary-condition
+const defaultTheme = localStorage.getItem(LOCAL_STORAGE_THEME_KEY) as Theme ||
+Theme.LIGHT
 
 const ThemeProvider: FC = ({ children }) => {
   const [theme, setTheme] = useState<Theme>(defaultTheme)

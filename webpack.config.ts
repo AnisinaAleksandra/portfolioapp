@@ -11,6 +11,7 @@ export default (env: BuildEnv) => {
     src: path.resolve(__dirname, 'src')
   }
 
+  // eslint-disable-next-line @typescript-eslint/no-unnecessary-condition
   const mode = env.mode || 'development'
   const PORT = env.port || 3000
 

@@ -7,8 +7,7 @@ declare module '*.scss' {
 declare module '*.png';
 declare module '*.jpg';
 declare module '*.jpeg'{
-  import React from 'react'
-
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const JPEG: any
   export default JPEG
 }

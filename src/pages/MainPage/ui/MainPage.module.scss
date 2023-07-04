@@ -1,13 +1,13 @@
-.main_page{
+.main_page {
     padding-top: 70px;
     display: flex;
     justify-content: center;
 
-    .left_side{
+    .left_side {
         max-width: 715px;
         padding-top: 22px;
 
-        .head_text{
+        .head_text {
             font-family: Roboto, sans-serif;
             font-style: normal;
             font-weight: 700;
@@ -19,22 +19,19 @@
 
             letter-spacing: 2px;
 
-            .orange_text{
-                color: #FF8A56;
+            .orange_text {
+                color: #ff8a56;
             }
-      
-
         }
 
-        .bottom_text{
+        .bottom_text {
             max-width: 547px;
         }
-
     }
 
-    .right_side_foto{
-        max-width:500px;
-        height:595px;
-        background-color: antiquewhite;
+    .right_side_foto {
+        max-width: 500px;
+        height: 595px;
+        // background-image: url("../../../shared/assets/icons/main_image.png");
     }
 }

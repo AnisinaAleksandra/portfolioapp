@@ -4,19 +4,19 @@ declare module '*.scss' {
   export = classNames
 }
 
-declare module '*.png';
-declare module '*.jpg';
-declare module '*.jpeg'{
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
-  const JPEG: any
-  export default JPEG
+declare module '*.jpg' {
+  const path: string
+  export default path
 }
 
+declare module '*.png';
+declare module '*.jpg';
+declare module '*.jpeg';
 declare module '*.svg' {
-  import type React from 'react'
+    import React from 'react';
 
-  const SVG: React.VFC<React.SVGProps<SVGSVGElement>>
-  export default SVG
+    const SVG: React.VFC<React.SVGProps<SVGSVGElement>>;
+    export default SVG;
 }
 
 declare const __IS_DEV__: boolean

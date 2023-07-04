@@ -1,6 +1,5 @@
-import type { Preview, StoryFn } from '@storybook/react'
+import type { Preview } from '@storybook/react'
 import 'app/styles/index.scss';
-import React, { ReactElement } from 'react';
 
 const preview: Preview = {
   parameters: {
@@ -12,11 +11,6 @@ const preview: Preview = {
       }
     }
   },
-  // decorators: [
-  //   (StoryComponent: any) => (
-  //       <StoryComponent/>
-  //   ),
-  // ],
 }
 
 export default preview

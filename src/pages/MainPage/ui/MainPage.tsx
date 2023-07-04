@@ -1,6 +1,6 @@
 import cls from './MainPage.module.scss'
 import { useTranslation } from 'react-i18next'
-
+import image  from '../../../shared/assets/icons/main_image.jpeg'
 const MainPage = () => {
   const { t } = useTranslation('main')
   return (
@@ -16,6 +16,9 @@ const MainPage = () => {
               <div className={cls.bottom_text}>{t('bottom_text')}</div>
           </div>
           <div className={cls.right_side_foto}>
+              <div className={cls.part_image}>
+                <img src={image} alt='my_foto'/>
+             </div>
           </div>
       </div>
   )

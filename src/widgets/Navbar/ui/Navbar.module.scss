@@ -5,22 +5,69 @@
     display: flex;
     align-items: center;
     padding: 20px;
-}
 
-.links {
-    margin-left: auto;
-}
+    .logo {
+        @keyframes tipsy {
+            0% {
+                transform: translateX(-50%) translateY(-50%) rotate(0deg);
+            }
 
-.mainLink {
-    margin-right: 15px;
-}
+            100% {
+                transform: translateX(-50%) translateY(-50%) rotate(360deg);
+            }
+        }
 
-.icon_switch{
-    width: 60px;
-    height: 60px;
+        a {
+            color: #fffbf1;
+            text-shadow: 0 20px 25px #2e2e31, 0 40px 60px #2e2e31;
 
-    // position: relative;
-    svg{
-        width: 100%;
+            // font-size: 80px;
+            font-weight: bold;
+            text-decoration: none;
+            background: #ce5937;
+            background: linear-gradient(left, #ce5937 0%, #a40999 100%, #c59237 100%);
+            background: linear-gradient(left, #ce5937 0%, #a40999 100%, #c59237 100%);
+            background: linear-gradient(to right, #ce5937 0%, #a40999 100%, #c59237 100%);
+
+            // letter-spacing: -3px;
+            margin: 0;
+            position: absolute;
+
+            // top: 50%;
+            // left: 50%;
+            transform: translateX(25%) translateY(-50%);
+        }
+
+        a::before,
+        a::after {
+            content: "";
+            padding: 0.9em 0.4em;
+            position: absolute;
+            left: 50%;
+            width: 100%;
+            top: 50%;
+            display: block;
+            border: 5px solid red;
+            transform: translateX(-50%) translateY(-50%) rotate(0deg);
+            animation: 10s infinite alternate ease-in-out tipsy;
+        }
+
+        a::before {
+            border-color: #d9524a #d9524a rgb(0 0 0 / 0%) rgb(0 0 0 / 0%);
+            z-index: -1;
+        }
+
+        a::after {
+            border-color: rgb(0 0 0 / 0%) rgb(0 0 0 / 0%) #d9524a #d9524a;
+            box-shadow: 25px 25px 25px rgb(46 46 49 / 80%);
+        }
+    }
+
+    .links {
+        margin-left: auto;
+
+        .mainLink {
+            margin-right: 15px;
+        }
     }
 }

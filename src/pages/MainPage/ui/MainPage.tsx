@@ -1,6 +1,8 @@
 import cls from './MainPage.module.scss'
 import { useTranslation } from 'react-i18next'
-import image  from '../../../shared/assets/icons/main_image.jpeg'
+import image  from 'shared/assets/icons/main_image.jpeg'
+import { Button, ThemeButton } from 'shared/ui/Button/Button'
+import { ButtonDownloadСv } from 'shared/ui/ButtonDownload/ButtonDownload'
 const MainPage = () => {
   const { t } = useTranslation('main')
   return (
@@ -14,6 +16,10 @@ const MainPage = () => {
               </div>
 
               <div className={cls.bottom_text}>{t('bottom_text')}</div>
+              <div  className={cls.buttons_box}>
+                <ButtonDownloadСv className={'download_cv'}/>
+                <Button/>
+              </div>
           </div>
           <div className={cls.right_side_foto}>
               <div className={cls.part_image}>

@@ -2,9 +2,12 @@
   "Not_found_page": "Page not found",
   "WEB_DEVELOPER": "WEB_DEVELOPER",
   "about": "About",
+  "book_a_call": "book_a_call",
   "bottom_text": "bottom_text",
   "contacts": "Contacts",
   "description_text": "description_text",
+  "download_C": "download_C",
+  "download_CV": "download CV",
   "language": "Язык",
   "main": "Main",
   "orange_text": "orange_text",
@@ -12,6 +15,5 @@
   "react_angular": "react_angular",
   "throw error": "throw error",
   "Обновить страницу": "Обновить страницу",
-  "Произошла непредвиденная ошибка": "Произошла непредвиденная ошибка",
-  "Скачать резюме": "Скачать резюме"
+  "Произошла непредвиденная ошибка": "Произошла непредвиденная ошибка"
 }

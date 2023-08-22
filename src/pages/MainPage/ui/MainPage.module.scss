@@ -1,3 +1,4 @@
+
 .main_page {
     display: flex;
     justify-content: center;
@@ -13,6 +14,7 @@
             line-height: 82px;
             padding-top: 70px;
             letter-spacing: 2px;
+            padding-bottom: 30px;
 
             .orange_text {
                 color: #ff8a56;
@@ -36,6 +38,11 @@
         img {
             height: 100vh;
             margin: 0 0 0 -50px;
+            width: 300px;
+    height: 337px;
+    object-fit: cover;
+    object-position: 100% 0;
         }
     }
 }
+

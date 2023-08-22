@@ -17,8 +17,8 @@ const MainPage = () => {
 
               <div className={cls.bottom_text}>{t('bottom_text')}</div>
               <div  className={cls.buttons_box}>
-                <ButtonDownloadСv className={'download_cv'}/>
-                <Button/>
+                <Button theme={ThemeButton.FILLED}>{t('book_a_call')}</Button>
+                <ButtonDownloadСv className={'download_cv'} text={t('download_C')}/>
               </div>
           </div>
           <div className={cls.right_side_foto}>

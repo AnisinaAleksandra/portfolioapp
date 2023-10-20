@@ -8,23 +8,24 @@ interface NavbarProps {
 }
 
 export const Navbar = ({ className }: NavbarProps) => {
-  const { t } = useTranslation('navbar')
+  const { t } = useTranslation('navbar');
+  const actualTheme = localStorage.getItem('theme') === 'dark' ? AppLinkTheme.PRIMARY  : AppLinkTheme.SECONDARY 
   return (
       <div className={classNames(cls.navbar, {}, className ? [className] : [])}>
         <div className={cls.logo}><a>Portfolio Anisina</a></div>
           <div className={cls.links}>
-              <AppLink theme={AppLinkTheme.PRIMARY}
+              <AppLink theme={actualTheme}
               to={'/'} className={cls.mainLink}>{t('main')}
               </AppLink>
-              <AppLink theme={AppLinkTheme.PRIMARY}
+              <AppLink theme={actualTheme}
               to={'/about'} className={cls.mainLink}>
                   {t('about')}
               </AppLink>
-              <AppLink theme={AppLinkTheme.PRIMARY}
+              <AppLink theme={actualTheme}
               to={'/projects'} className={cls.mainLink}>
                   {t('projects')}
               </AppLink>
-              <AppLink theme={AppLinkTheme.PRIMARY} to={'/contacts'}>
+              <AppLink theme={actualTheme} to={'/contacts'}>
                   {t('contacts')}
               </AppLink>
           </div>

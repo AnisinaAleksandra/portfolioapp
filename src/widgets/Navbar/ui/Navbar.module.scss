@@ -4,6 +4,7 @@
     background: var(--inverted-bg-color);
     display: flex;
     align-items: center;
+    justify-content: space-between;
     padding: 20px;
 
     .logo {
@@ -64,7 +65,6 @@
     }
 
     .links {
-        margin-left: auto;
 
         .mainLink {
             margin-right: 15px;

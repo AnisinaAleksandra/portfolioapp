@@ -11,7 +11,10 @@ module.exports = {
     'plugin:i18next/recommended',
     'plugin:storybook/recommended'],
   overrides: [{
-    files: ['*.ts', '*.tsx'],
+    files: ['*.ts', '*.tsx', '**/src/**.test.{ts,tsx}'],
+    rules: {
+      'i18next/no-literal-string':'off'
+    },
     extends: [
       'plugin:@typescript-eslint/recommended',
       'plugin:@typescript-eslint/recommended-requiring-type-checking',

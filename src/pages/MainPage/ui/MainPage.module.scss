@@ -2,10 +2,12 @@
 .main_page {
     display: flex;
     justify-content: center;
-
+padding: 120px 0;
     .left_side {
-        max-width: 715px;
-
+    max-width: 715px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
         .head_text {
             font-family: Roboto, sans-serif;
             font-style: normal;
@@ -32,16 +34,14 @@
 
     .right_side_foto {
         max-width: 500px;
-        height: 100vh;
         overflow: hidden;
-
+display: flex;
+align-items: center;
         img {
-            height: 100vh;
-            margin: 0 0 0 -50px;
+border-radius: 50%;
             width: 300px;
-    height: 337px;
+    height: 300px;
     object-fit: cover;
-    object-position: 100% 0;
         }
     }
 }

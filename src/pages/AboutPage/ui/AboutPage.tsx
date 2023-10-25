@@ -5,12 +5,21 @@ const AboutPage = () => {
 
   return (
       <div className={cls.container}>
+          <div className={cls.title_of_page}>
+              {t('ABOUT_ME')}
+          </div>
           <div className={cls.description_part}>
               <div className={cls.who_am_i}>{t('WEB_DEVELOPER')}</div>
               <div className={cls.that_is_me}>{t('react_angular')}</div>
               <div className={cls.description_text}>
                   {t('description_text')}
               </div>
+          </div>
+          <div className={cls.my_skils}>
+                 <div className={cls.title_of_page}>
+              {t('SKILLS')}
+              </div>
+              
           </div>
       </div>
   )

@@ -13,7 +13,10 @@ const AboutPage = () => {
               <div className={cls.who_am_i}>{t('WEB_DEVELOPER')}</div>
               <div className={cls.that_is_me}>{t('react_angular')}</div>
               <div className={cls.description_text}>
-                  {t('description_text')}
+                      {t('I')} <strong>{t('front-end web developer')}</strong>  {t('create')}
+                      <strong>{t('Projects')} </strong>{t('description_text')} {t('subscribe')}
+                      <a href='www.linkedin.com/in/aleksandra-anisina-4024551aa'>LinkedIn</a>.  
+                      {t('end')} <strong>{t('contact')}</strong>  {t('me')}
               </div>
           </div>
           <div className={cls.my_skils}>
@@ -47,7 +50,12 @@ const AboutPage = () => {
                   <div className={cls.skills_item}>
                       RTK Query
                   </div>
-                   
+                    <div className={cls.skills_item}>
+                      MobX
+                      </div>
+                      <div className={cls.skills_item}>
+                      Redux Saga/Thunk
+                  </div>
               </div>
           </div>
           </div>

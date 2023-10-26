@@ -44,6 +44,16 @@
         }
 
         .description_text{
+           strong{
+            font-size: larger;
+
+           }
+           a{
+text-decoration: underline;
+    font-weight: 700;
+    color: #7843e9;
+    margin: 0 3px;            
+           }
         }
     }
     .my_skils{

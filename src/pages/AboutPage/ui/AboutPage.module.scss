@@ -1,7 +1,8 @@
-.container{
-    max-width: 1240px;
-    padding: 120px 0;
-.title_of_page{
+.container {
+  max-width: 1240px;
+  padding: 120px 0;
+  margin: 0 auto;
+  .title_of_page {
     display: block;
     font-size: var(--font-size-l);
     text-transform: uppercase;
@@ -10,75 +11,71 @@
     text-align: center;
     margin-bottom: 3.5rem;
     position: relative;
-    &::before{
-    content: " ";
-    width: 68px;
-    height: 5px;
-    background-color: var(--secondary-color);
-    display: block;
-    position: relative;
-    bottom: -40px;
-    margin: 0 auto;
-    border-radius: 5px;
+    &::before {
+      content: " ";
+      width: 68px;
+      height: 5px;
+      background-color: var(--secondary-color);
+      display: block;
+      position: relative;
+      bottom: -40px;
+      margin: 0 auto;
+      border-radius: 5px;
     }
-}
-.content_page{
+  }
+  .content_page {
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
-    .description_part{
+    .description_part {
+      display: flex;
+      flex-direction: column;
+      margin-right: 5px;
+      max-width: 430px;
+      .who_am_i {
+        margin-bottom: 16px;
+        letter-spacing: 3px;
+        text-transform: uppercase;
+      }
+
+      .that_is_me {
+        font-weight: bolder;
+        margin-bottom: 16px;
+      }
+
+      .description_text {
+        strong {
+          font-size: larger;
+        }
+        a {
+          text-decoration: underline;
+          font-weight: 700;
+          color: #7843e9;
+          margin: 0 3px;
+        }
+      }
+    }
+    .my_skils {
+      max-width: 430px;
+      .title_of_skills {
+        letter-spacing: 3px;
+        text-transform: uppercase;
+      }
+      .skills_list {
         display: flex;
-        flex-direction: column;
-        margin-right: 5px;
-        max-width: 430px;
-        .who_am_i{
-            margin-bottom: 16px;
-    letter-spacing: 3px;
-    text-transform: uppercase;
+        flex-wrap: wrap;
+        margin-top: 16px;
 
+        .skills_item {
+          padding: 10px 10px;
+          margin-bottom: 10px;
+          margin-right: 10px;
+          font-size: var(--font-size-m);
+          background: rgba(153, 153, 153, 0.2);
+          border-radius: 5px;
+          font-weight: 600;
         }
-
-        .that_is_me{
-            font-weight: bolder;
-            margin-bottom: 16px;
-        }
-
-        .description_text{
-           strong{
-            font-size: larger;
-
-           }
-           a{
-text-decoration: underline;
-    font-weight: 700;
-    color: #7843e9;
-    margin: 0 3px;            
-           }
-        }
+      }
     }
-    .my_skils{
-        max-width: 430px;
-.title_of_skills{
-    letter-spacing: 3px;
-    text-transform: uppercase;
-
-}
-        .skills_list{
-                display: flex;
-    flex-wrap: wrap;
-          margin-top: 16px;
-
-            .skills_item{
-                    padding: 10px 10px;
-    margin-bottom: 10px;
-    margin-right: 10px;
-    font-size:  var(--font-size-m);
-    background: rgba(153,153,153,.2);
-    border-radius: 5px;
-    font-weight: 600;
-            }
-        }
-    }
-}
-    
+  }
 }

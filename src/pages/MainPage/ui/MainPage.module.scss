@@ -191,3 +191,43 @@
     }
   }
 }
+
+@media screen and (max-width: 450px) {
+  .main_page {
+    .main_page_container {
+      .left_side {
+        max-width: 300px;
+        .head_text {
+          font-size: 25px;
+          line-height: 30px;
+        }
+      }
+      .right_side_foto {
+        img {
+          width: 250px;
+          height: 250px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .main_page {
+    .main_page_container {
+      .left_side {
+        max-width: 250px;
+        .head_text {
+          font-size: 20px;
+          line-height: 25px;
+        }
+      }
+      .right_side_foto {
+        img {
+          width: 250px;
+          height: 250px;
+        }
+      }
+    }
+  }
+}

@@ -3,8 +3,8 @@
   flex-direction: column;
   .main_page_container {
     display: flex;
-    justify-content: center;
-    padding: 120px 0;
+    justify-content: space-evenly;
+    padding: 140px 0;
     .left_side {
       max-width: 715px;
       display: flex;
@@ -44,6 +44,112 @@
         width: 300px;
         height: 300px;
         object-fit: cover;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1350px) {
+  .main_page {
+    .main_page_container {
+      .left_side {
+        max-width: 565px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1110px) {
+  .main_page {
+    .main_page_container {
+      .left_side {
+        max-width: 450px;
+      }
+    }
+  }
+}
+@media screen and (max-width: 1000px) {
+  .main_page {
+    .main_page_container {
+      .left_side {
+        .head_text {
+          font-family: Roboto, sans-serif;
+          font-style: normal;
+          font-weight: 700;
+          font-size: 40px;
+          line-height: 45px;
+          padding-top: 30px;
+          letter-spacing: 1px;
+          padding-bottom: 30px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 950px) {
+  .main_page {
+    .main_page_container {
+      justify-content: center;
+    }
+  }
+}
+
+@media screen and (max-width: 878px) {
+  .main_page {
+    .main_page_container {
+      flex-direction: column-reverse;
+      align-items: center;
+      .left_side {
+        max-width: 600px;
+        text-align: center;
+        .head_text {
+          font-size: 45px;
+          line-height: 50px;
+        }
+        .bottom_text {
+          max-width: 600px;
+          margin: 0 auto;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .main_page {
+    .main_page_container {
+      flex-direction: column-reverse;
+      align-items: center;
+      .left_side {
+        max-width: 600px;
+        text-align: center;
+        .head_text {
+          font-size: 40px;
+          line-height: 45px;
+        }
+        .bottom_text {
+          max-width: 400px;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 600px) {
+  .main_page {
+    .main_page_container {
+      .left_side {
+        max-width: 400px;
+        text-align: center;
+        .head_text {
+          font-size: 35px;
+          line-height: 40px;
+          text-align: start;
+        }
+        .bottom_text {
+          max-width: 400px;
+          text-align: end;
+        }
       }
     }
   }

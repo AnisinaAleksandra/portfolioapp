@@ -7,6 +7,7 @@
   justify-content: space-between;
   padding: 20px;
   position: fixed;
+  z-index: 9999;
   .logo {
     @keyframes tipsy {
       0% {
@@ -22,7 +23,6 @@
       color: #fffbf1;
       text-shadow: 0 20px 25px #2e2e31, 0 40px 60px #2e2e31;
 
-      // font-size: 80px;
       font-weight: bold;
       text-decoration: none;
       background: #ce5937;
@@ -39,8 +39,6 @@
       margin: 0;
       position: absolute;
 
-      // top: 50%;
-      // left: 50%;
       transform: translateX(25%) translateY(-50%);
     }
 
@@ -71,7 +69,14 @@
 
   .links {
     .mainLink {
+      cursor: pointer;
       margin-right: 15px;
+      font-size: 20px;
+      color: var(--primary-color-navbar);
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      font-weight: 700;
+      transition: color 0.3s;
     }
   }
 }

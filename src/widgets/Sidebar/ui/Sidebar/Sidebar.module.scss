@@ -1,64 +1,62 @@
- @import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css);
- 
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css);
 
 @mixin transformScale($size: 1) {
-    transform: scale($size);
-    -ms-transform: scale($size);
-    -webkit-transform: scale($size);
+  transform: scale($size);
+  -ms-transform: scale($size);
+  -webkit-transform: scale($size);
 }
 
- 
- .Sidebar {
-    width: 55px;
-    border-top: 2px solid var(--inverted-bg-color);
-    border-bottom: 2px solid var(--inverted-bg-color);
-    border-right: 2px solid var(--inverted-bg-color);
-    position: absolute;
-    top: 25%;
-    border-radius: 0 20px 20px 0;
-    transition: width 0.3s;
-        .switchers {
+.Sidebar {
+  width: 55px;
+  border-top: 2px solid var(--inverted-bg-color);
+  border-bottom: 2px solid var(--inverted-bg-color);
+  border-right: 2px solid var(--inverted-bg-color);
+  position: fixed;
+  top: 25%;
+  border-radius: 0 20px 20px 0;
+  transition: width 0.3s;
+  .switchers {
     bottom: 20px;
     display: flex;
     justify-content: center;
     flex-direction: column;
     width: 100%;
     .social_container {
-    .social_icons {
-    padding: 0;
-    list-style: none;
-    display: flex;
-    flex-direction: column;
-    li {
-        display: inline;
-        margin: 5px;
-        position: relative;
-        font-size: 1.2em;
-        transition: all var(--timing) ease-out;
-    }
+      .social_icons {
+        padding: 0;
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        li {
+          display: inline;
+          margin: 5px;
+          position: relative;
+          font-size: 1.2em;
+          transition: all var(--timing) ease-out;
+        }
 
-    i {
-        color: #fff;
-        position: absolute;
-        top: 10px;
-        left: 11px;
-        transition: all var(--timing) ease-out;
-    }
-    svg{
-        color: #fff;
-        position: absolute;
-        top: 10px;
-        left: 11px;
-        transition: all var(--timing) ease-out;
-    }
+        i {
+          color: #fff;
+          position: absolute;
+          top: 10px;
+          left: 11px;
+          transition: all var(--timing) ease-out;
+        }
+        svg {
+          color: #fff;
+          position: absolute;
+          top: 10px;
+          left: 11px;
+          transition: all var(--timing) ease-out;
+        }
 
-    a {
-        display: inline-block;
-       cursor: pointer;
-        span{
-        display: inline-block;
-       }
-        &:before {
+        a {
+          display: inline-block;
+          cursor: pointer;
+          span {
+            display: inline-block;
+          }
+          &:before {
             @include transformScale();
             content: " ";
             width: 40px;
@@ -67,26 +65,30 @@
             display: inline-block;
             background: linear-gradient(45deg, var(--iconColor), var(--accent));
             transition: all var(--timing) ease-out;
-        }
-        
-        &:hover:before {
+          }
+
+          &:hover:before {
             transform: scale(0);
             transition: all var(--timing) ease-in;
-        }
-        
-        &:hover i, svg {
+          }
+
+          &:hover i,
+          svg {
             @include transformScale(2.2);
             color: var(--iconColor);
-            background: -webkit-linear-gradient(45deg, var(--iconColor), var(--accent));
+            background: -webkit-linear-gradient(
+              45deg,
+              var(--iconColor),
+              var(--accent)
+            );
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             transition: all var(--timing) ease-in;
+          }
         }
+      }
     }
-  
-}
-}
-}
+  }
 }
 
 // .collapsed {
@@ -136,12 +138,12 @@
 //             background: linear-gradient(45deg, var(--iconColor), var(--accent));
 //             transition: all var(--timing) ease-out;
 //         }
-        
+
 //         &:hover:before {
 //             transform: scale(0);
 //             transition: all var(--timing) ease-in;
 //         }
-        
+
 //         &:hover i {
 //             @include transformScale(1.5);
 //             color: var(--iconColor);
@@ -151,20 +153,12 @@
 //             transition: all var(--timing) ease-in;
 //         }
 //     }
-  
-// }
-// }
-// }
-// }
 
-
+// }
+// }
+// }
+// }
 
 .lang {
-    margin-left: 20px;
+  margin-left: 20px;
 }
-
-
-
-
-
-

@@ -1,6 +1,7 @@
 {
   "ABOUT_ME": "ABOUT_ME",
   "I": "I",
+  "Main": "Main",
   "Not_found_page": "Page not found",
   "Projects": "Projects",
   "SKILLS": "SKILLS",
@@ -23,6 +24,7 @@
   "orange_text": "orange_text",
   "projects": "Projects",
   "react_angular": "react_angular",
+  "social": "social",
   "subscribe": "subscribe",
   "throw error": "throw error",
   "Обновить страницу": "Обновить страницу",

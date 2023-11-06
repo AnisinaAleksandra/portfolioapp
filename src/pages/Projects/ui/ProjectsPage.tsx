@@ -24,7 +24,7 @@ const ProjectsPage = () => {
   ];
 
   return (
-    <div className={cls.progects_page}>
+    <div className={cls.progects_page} id="projects">
       <div className={cls.title_of_page}>{t("Projects")}</div>
       <div className={cls.container_progects_list}>
         {projectList.length ? (

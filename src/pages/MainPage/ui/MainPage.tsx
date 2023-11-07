@@ -5,6 +5,7 @@ import image from "shared/assets/icons/main_image.jpeg";
 import { Button, ThemeButton } from "shared/ui/Button/Button";
 import { ButtonDownloadСv } from "shared/ui/ButtonDownload/ButtonDownload";
 import { ProjectsPage } from "pages/Projects";
+import Contacts from "pages/Contacts/ui/Contacts";
 const MainPage = () => {
   const { t } = useTranslation("main");
   return (
@@ -34,6 +35,7 @@ const MainPage = () => {
 
       <AboutPage />
       <ProjectsPage />
+      <Contacts />
     </div>
   );
 };

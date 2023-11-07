@@ -1,28 +1,16 @@
 import { classNames } from "shared/lib/classNames/classNames";
-import { useState } from "react";
-import { ThemeSwitcher } from "shared/ui/ThemeSwitcher";
-// import { Button, ThemeButton } from 'shared/ui/Button/Button'
 import cls from "./Sidebar.module.scss";
-// import { LangSwitcher } from 'widgets/LangSwitcher/LangSwitcher'
 import { useTranslation } from "react-i18next";
 import { useTheme } from "app/providers/ThemeProviders";
-// import { BugButton } from 'app/providers/ErrorBoundary'
-// import CollLeft from 'shared/assets/icons/window-collapse-left-svgrepo-com.svg'
-// import CollRight
-//   from 'shared/assets/icons/window-collapse-right-svgrepo-com.svg'
 
 interface SidebarProps {
   className?: string;
 }
 
 export const Sidebar = ({ className }: SidebarProps) => {
-  // const [collapsed, setCollapsed] = useState(true)
   const { theme, toggleTheme } = useTheme();
 
-  // const onToggle = () => {
-  //   setCollapsed((prev) => !prev)
-  // }
-  const { t, i18n } = useTranslation();
+  const { i18n } = useTranslation();
 
   const toggle = async () => {
     void i18n.changeLanguage(i18n.language === "ru" ? "en" : "ru");
@@ -38,17 +26,17 @@ export const Sidebar = ({ className }: SidebarProps) => {
               </a>
             </li>
             <li>
-              <a href="#">
+              <a href="https://www.instagram.com/anisina_aleksandra">
                 <i className="fa fa-instagram"></i>
               </a>
             </li>
             <li>
-              <a href="#">
+              <a href="https://www.linkedin.com/in/aleksandra-anisina">
                 <i className="fa fa-linkedin"></i>
               </a>
             </li>
             <li>
-              <a href="#">
+              <a href="https://github.com/AnisinaAleksandra#">
                 <i className="fa fa-github"></i>
               </a>
             </li>

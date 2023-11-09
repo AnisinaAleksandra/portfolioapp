@@ -1,6 +1,6 @@
 {
-    "main": "Main page",
-    "about": "About Me",
-    "projects":"Projects",
-    "contacts":"Contacts"
+  "main": "Main page",
+  "about": "About Me",
+  "projects": "Projects",
+  "contact": "Contact"
 }

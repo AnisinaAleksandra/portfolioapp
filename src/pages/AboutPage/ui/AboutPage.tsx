@@ -6,6 +6,7 @@ const AboutPage = () => {
     "JavaScript/TypeScript",
     "React",
     "Angular",
+    "Webpack",
     "HTML",
     "CSS/SASS/LESS",
     "GITHUB/GITLUB",
@@ -36,24 +37,11 @@ const AboutPage = () => {
         <div className={cls.my_skils}>
           <div className={cls.title_of_skills}>{t("SKILLS")}</div>
           <div className={cls.skills_list}>
-            {/* <div className={cls.skills_item}>React</div> */}
             {skillsList.map((skill) => (
               <div className={cls.skills_item} key={skill}>
                 {skill}
               </div>
             ))}
-            {/* <div className={cls.skills_item}>Angular</div>
-            <div className={cls.skills_item}>HTML</div>
-            <div className={cls.skills_item}>CSS</div>
-            <div className={cls.skills_item}>JavaScript/TypeScript</div>
-            <div className={cls.skills_item}>SASS</div>
-            <div className={cls.skills_item}>GITHUB/GITLUB</div>
-            <div className={cls.skills_item}>Responsive Design</div>
-
-            <div className={cls.skills_item}>Express</div>
-            <div className={cls.skills_item}>RTK Query</div>
-            <div className={cls.skills_item}>MobX</div>
-            <div className={cls.skills_item}>Redux Saga/Thunk</div> */}
           </div>
         </div>
       </div>

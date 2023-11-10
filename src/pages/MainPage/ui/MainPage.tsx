@@ -34,8 +34,8 @@ const MainPage = () => {
       </div>
 
       <AboutPage />
-      {/* <ProjectsPage />
-      <Contact /> */}
+      <ProjectsPage />
+      {/*  <Contact /> */}
     </div>
   );
 };

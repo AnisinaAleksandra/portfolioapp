@@ -58,3 +58,155 @@
     }
   }
 }
+
+@media screen and (max-width: 1024px) {
+  .progects_page {
+    padding: 50px 0;
+    .container_progects_list {
+      .progect {
+        justify-content: center;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 910px) {
+  .progects_page {
+    .container_progects_list {
+      .progect {
+        justify-content: center;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .progects_page {
+    .container_progects_list {
+      .progect {
+        .image_of_project {
+          img:first-child {
+            width: 372px;
+            top: 28px;
+            height: 226px;
+            left: 47px;
+          }
+          img:last-child {
+            width: 470px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 581px) {
+  .progects_page {
+    .title_of_page {
+      padding-left: 30px;
+    }
+    .container_progects_list {
+      .progect {
+        padding-left: 30px;
+        .image_of_project {
+          img:first-child {
+            width: 292px;
+            top: 22px;
+            height: 177px;
+            left: 37px;
+          }
+          img:last-child {
+            width: 370px;
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 450px) {
+  .progects_page {
+    .title_of_page {
+      padding-left: 45px;
+    }
+    .container_progects_list {
+      .progect {
+        padding-left: 45px;
+        .image_of_project {
+          img:first-child {
+            width: 213px;
+            top: 16px;
+            height: 129px;
+            left: 28px;
+          }
+          img:last-child {
+            width: 270px;
+          }
+        }
+        .description_of_project {
+          width: 270px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .progects_page {
+    .title_of_page {
+      padding-left: 65px;
+    }
+    .container_progects_list {
+      .progect {
+        padding-left: 65px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .progects_page {
+    .title_of_page {
+      padding-left: 45px;
+    }
+    .container_progects_list {
+      .progect {
+        padding-left: 45px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 345px) {
+  .progects_page {
+    .container_progects_list {
+      .progect {
+        .description_of_project {
+          width: 220px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .progects_page {
+    .container_progects_list {
+      .progect {
+        .image_of_project {
+          img:first-child {
+            width: 197px;
+            top: 14px;
+            height: 120px;
+            left: 26px;
+          }
+          img:last-child {
+            width: 250px;
+          }
+        }
+        .description_of_project {
+          width: 220px;
+        }
+      }
+    }
+  }
+}

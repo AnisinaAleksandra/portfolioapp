@@ -2,6 +2,7 @@ import { makePostRequest } from "./api";
 
 const telegramBotKey = process.env.TELEGRAM_BOT_TOKEN;
 const chat_id = `${process.env.TELEGRAM_USER_ID}`;
+console.log(chat_id);
 
 export const sendNotification = async (text: string, parse_node: string) => {
   let response = "";

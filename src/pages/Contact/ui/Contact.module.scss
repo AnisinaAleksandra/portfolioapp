@@ -53,3 +53,18 @@
     }
   }
 }
+
+@media screen and (max-width: 768px) {
+  .container {
+    padding: 0 0 120px 0;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .container {
+    padding-left: 30px;
+    .contacts_form {
+      width: 350px;
+    }
+  }
+}

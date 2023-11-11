@@ -35,7 +35,7 @@ const MainPage = () => {
 
       <AboutPage />
       <ProjectsPage />
-      {/*  <Contact /> */}
+      <Contact />
     </div>
   );
 };

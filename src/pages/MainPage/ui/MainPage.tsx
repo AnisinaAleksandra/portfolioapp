@@ -27,9 +27,10 @@ const MainPage = () => {
           </div>
         </div>
         <div className={cls.right_side_foto}>
-          <div className={cls.part_image}>
-            <img src={image} alt="my_foto" />
-          </div>
+          {/* <div className={cls.part_image}></div> */}
+          {/* <div className={cls.part_image}></div> */}
+          <img src={image} alt="my_foto" />
+          {/* <div className={cls.part_image}></div> */}
         </div>
       </div>
 

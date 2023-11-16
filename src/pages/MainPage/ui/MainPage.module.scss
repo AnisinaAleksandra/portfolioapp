@@ -35,15 +35,37 @@
     }
 
     .right_side_foto {
-      max-width: 500px;
-      overflow: hidden;
+      max-width: 600px;
+      // overflow: hidden;
       display: flex;
       align-items: center;
+      position: relative;
+      .part_image {
+        position: absolute;
+        border-radius: 50%;
+        width: 250px;
+        height: 250px;
+        left: 100px;
+        bottom: 150px;
+        background-color: #828282;
+        z-index: 1;
+      }
+      .part_image:last-child {
+        bottom: -10px;
+        z-index: 3;
+      }
+      .part_image:first-child {
+        left: 130px;
+        top: 100px;
+        background-color: #ffffff;
+        z-index: 2;
+      }
       img {
         border-radius: 50%;
         width: 300px;
         height: 300px;
         object-fit: cover;
+        z-index: 10;
       }
     }
   }

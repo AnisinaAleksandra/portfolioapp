@@ -15,12 +15,6 @@ export const Footer = ({ className }: FooterProps) => {
       : AppLinkTheme.SECONDARY;
   return (
     <div className={classNames(cls.footer, {}, className ? [className] : [])}>
-      <div className={cls.logo}>
-        <a>Portfolio Anisina</a>
-      </div>
-      <div className={cls.links}>
-        <h2>{t("social")}</h2>
-      </div>
       <div className={cls.container}>
         <div className={cls.text}>
           © Copyright 2023. Made by Anisina Aleksandra

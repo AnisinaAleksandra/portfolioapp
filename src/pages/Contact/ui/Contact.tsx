@@ -21,13 +21,13 @@ const Contact = () => {
   });
 
   const [messageIsSend, setMessageIsSend] = useState(false);
+
   const handleSubmitForm = (data: {
     name: string;
     email: string;
     message: string;
   }) => {
     const textMessage: string = `${data.name},${data.email},${data.message}`;
-    console.log(textMessage);
     sendNotification(textMessage, "html")
       .then((res) => {
         console.log(JSON.parse(res));
@@ -60,7 +60,6 @@ const Contact = () => {
   return (
     <div className={cls.container} id="contacts">
       <ToastContainer />
-
       <div className={cls.title_of_page}>{t("contact")}</div>
       <div className={cls.form_plus_contacts}>
         <form

@@ -1,4 +1,5 @@
 .container {
+  padding-top: 10px;
   .title_of_page {
     display: block;
     font-size: var(--font-size-l);
@@ -130,6 +131,7 @@
 
 @media screen and (max-width: 425px) {
   .container {
+    padding-top: 10px;
     .content_page {
       .description_part {
         padding-left: 20px;

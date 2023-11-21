@@ -3,6 +3,8 @@ import cls from "./Contact.module.scss";
 import { useForm } from "react-hook-form";
 import { useTranslation } from "react-i18next";
 import { sendNotification } from "shared/config/utils/telegram";
+import { ToastContainer, toast } from "react-toastify";
+import "./ReactToastify.scss";
 
 const Contact = () => {
   const { t } = useTranslation("contact");
@@ -26,26 +28,39 @@ const Contact = () => {
   }) => {
     const textMessage: string = `${data.name},${data.email},${data.message}`;
     console.log(textMessage);
-
-    sendNotification(textMessage, "html").then((res) => {
-      console.log(res);
-
-      // if (JSON.parse(res)["ok"]) {
-      //   setMessageIsSend(JSON.parse(res)["ok"]);
-      // }
-      // if (!JSON.parse(res)["ok"]) {
-      //   setMessageIsSend(JSON.parse(res)["ok"]);
-      // }
-    });
-    // .catch((res) => {
-    //   console.log(JSON.parse(res));
-
-    //   setMessageIsSend(true);
-    // });
+    sendNotification(textMessage, "html")
+      .then((res) => {
+        console.log(JSON.parse(res));
+        toast(t("successful_message_sending"), {
+          position: "bottom-center",
+          autoClose: 5000,
+          hideProgressBar: false,
+          closeOnClick: true,
+          pauseOnHover: true,
+          draggable: true,
+          progress: undefined,
+          theme: "light",
+        });
+      })
+      .catch((res) => {
+        toast.error("Error", {
+          position: "bottom-center",
+          autoClose: 5000,
+          hideProgressBar: false,
+          closeOnClick: true,
+          pauseOnHover: true,
+          draggable: true,
+          progress: undefined,
+          theme: "light",
+        });
+        setMessageIsSend(true);
+      });
   };
 
   return (
     <div className={cls.container} id="contacts">
+      <ToastContainer />
+
       <div className={cls.title_of_page}>{t("contact")}</div>
       <div className={cls.form_plus_contacts}>
         <form

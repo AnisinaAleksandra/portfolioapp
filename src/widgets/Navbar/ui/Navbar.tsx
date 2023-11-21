@@ -1,20 +1,26 @@
-import { classNames } from "shared/lib/classNames/classNames";
 import cls from "./Navbar.module.scss";
 import { useTranslation } from "react-i18next";
 import { Link } from "react-scroll";
+import { useState } from "react";
 interface NavbarProps {
   className?: string;
 }
 
 export const Navbar = ({ className }: NavbarProps) => {
   const { t } = useTranslation("navbar");
-
+  const [linksVariant, setLinksVariant] = useState(false);
+  const handleOpenMenu = () => {
+    setLinksVariant((prev) => !prev);
+  };
   return (
-    <div className={classNames(cls.navbar, {}, className ? [className] : [])}>
+    <div className={linksVariant ? cls.navbar_open : cls.navbar}>
       <div className={cls.logo}>
         <a>Portfolio Anisina</a>
       </div>
-      <div className={cls.links}>
+      <div
+        className={linksVariant ? cls.links_open : cls.links}
+        onClick={() => setLinksVariant(false)}
+      >
         {/* <AppLink theme={actualTheme}
               to={'/'} className={cls.mainLink}>{t('main')}
               </AppLink>
@@ -38,6 +44,7 @@ export const Navbar = ({ className }: NavbarProps) => {
           smooth={true}
           offset={-70}
           duration={500}
+          onClick={() => setLinksVariant(false)}
         >
           {t("main")}
         </Link>
@@ -49,6 +56,7 @@ export const Navbar = ({ className }: NavbarProps) => {
           smooth={true}
           offset={-70}
           duration={500}
+          onClick={() => setLinksVariant(false)}
         >
           {t("about")}
         </Link>
@@ -60,6 +68,7 @@ export const Navbar = ({ className }: NavbarProps) => {
           smooth={true}
           offset={-70}
           duration={500}
+          onClick={() => setLinksVariant(false)}
         >
           {t("projects")}
         </Link>
@@ -71,9 +80,16 @@ export const Navbar = ({ className }: NavbarProps) => {
           smooth={true}
           offset={-70}
           duration={500}
+          onClick={() => setLinksVariant(false)}
         >
           {t("contact")}
         </Link>
+      </div>
+
+      <div className={cls.burger} onClick={handleOpenMenu}>
+        <div className={cls.btn_line}></div>
+        <div className={cls.btn_line}></div>
+        <div className={cls.btn_line}></div>
       </div>
     </div>
   );
